@@ -1,0 +1,5 @@
+t=int(input())
+test_list =list(map(int,input().split()))
+print ("The original list is : " +  str(test_list))  
+test_list = list(set(test_list)) 
+print (test_list[-2])
