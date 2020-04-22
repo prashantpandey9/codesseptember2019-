@@ -1,0 +1,14 @@
+<div class='container'>
+		{%for qq in data.statewise%}
+			<h6>
+				{{qq.state}}
+				{{qq.confirmed}}
+			</h6>
+		{% endfor %}
+	</div>
+import json 
+import requests
+
+api="https://api.covid19india.org/data.json"
+s=(requests.get(api)).text
+data=json.loads(s)
